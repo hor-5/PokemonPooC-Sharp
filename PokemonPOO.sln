@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PokemonPOO.Consola", "PokemonPOO.Consola", "{8A5B51DA-BAA6-4404-9648-7F84CBF64EBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PokemonPOO.Entidades", "PokemonPOO.Entidades", "{D9D44E16-48F1-4887-8E3A-B11A64356199}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonPOO.Consola", "PokemonPOO.Consola\PokemonPOO.Consola.csproj", "{273FF442-84F1-42B9-BB92-448A4893FAA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonPOO.Entidades", "PokemonPOO.Entidades\PokemonPOO.Entidades.csproj", "{F144B886-9E81-479F-8352-D747E3387EA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PokemonPOO.Datastore", "PokemonPOO.Datastore", "{0B556356-0561-4BC5-9C17-78D4EA99DD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonPOO.Datastore", "PokemonPOO.Datastore\PokemonPOO.Datastore.csproj", "{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{273FF442-84F1-42B9-BB92-448A4893FAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273FF442-84F1-42B9-BB92-448A4893FAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273FF442-84F1-42B9-BB92-448A4893FAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273FF442-84F1-42B9-BB92-448A4893FAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F144B886-9E81-479F-8352-D747E3387EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F144B886-9E81-479F-8352-D747E3387EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F144B886-9E81-479F-8352-D747E3387EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F144B886-9E81-479F-8352-D747E3387EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{273FF442-84F1-42B9-BB92-448A4893FAA0} = {8A5B51DA-BAA6-4404-9648-7F84CBF64EBC}
+		{F144B886-9E81-479F-8352-D747E3387EA3} = {D9D44E16-48F1-4887-8E3A-B11A64356199}
+		{62CBF1C2-7B15-41EF-8696-4D71DAAA12A9} = {0B556356-0561-4BC5-9C17-78D4EA99DD40}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA092C01-EEFC-43E0-A3FB-45152CB433A9}
+	EndGlobalSection
+EndGlobal

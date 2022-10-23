@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f144b886-9e81-479f-8352-d747e3387ea3": {
+      "ProjectGuid": "f144b886-9e81-479f-8352-d747e3387ea3",
+      "DisplayName": "PokemonPOO.Entidades",
+      "ColorIndex": 0
+    },
+    "273ff442-84f1-42b9-bb92-448a4893faa0": {
+      "ProjectGuid": "273ff442-84f1-42b9-bb92-448a4893faa0",
+      "DisplayName": "PokemonPOO.Consola",
+      "ColorIndex": 1
+    },
+    "62cbf1c2-7b15-41ef-8696-4d71daaa12a9": {
+      "ProjectGuid": "62cbf1c2-7b15-41ef-8696-4d71daaa12a9",
+      "DisplayName": "PokemonPOO.Datastore",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PokemonPOO.Consola/1.0.0": {
+        "dependencies": {
+          "PokemonPOO.Entidades": "1.0.0"
+        },
+        "runtime": {
+          "PokemonPOO.Consola.dll": {}
+        }
+      },
+      "PokemonPOO.Entidades/1.0.0": {
+        "runtime": {
+          "PokemonPOO.Entidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PokemonPOO.Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PokemonPOO.Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
