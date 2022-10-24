@@ -4,7 +4,6 @@
     {
         public int idPokemon { get; set; }
         public string nombre { get; set; }
-
         public Tipo tipoPrincipal { get; set; }
         public Tipo? tipoSecundario { get; set; }
         public int salud { get; set; }
@@ -131,6 +130,12 @@
 
         public string getImagenASCII() {
             return imgASCII;
+        }
+
+        public void setEvoluciones() {
+            this.evoluciones = new List<string> { 
+                    "ivysaur", "venasaur"
+            };
         }
         public virtual void getEvoluciones()
         {

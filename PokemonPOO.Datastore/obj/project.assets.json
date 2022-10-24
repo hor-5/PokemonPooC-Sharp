@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "PokemonPOO.Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PokemonPOO.Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PokemonPOO.Entidades.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PokemonPOO.Entidades/1.0.0": {
+      "type": "project",
+      "path": "../PokemonPOO.Entidades/PokemonPOO.Entidades.csproj",
+      "msbuildProject": "../PokemonPOO.Entidades/PokemonPOO.Entidades.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "PokemonPOO.Entidades >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuario\\source\\repos\\PokemonPOO\\PokemonPOO.Entidades\\PokemonPOO.Entidades.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\PokemonPOO\\PokemonPOO.Entidades\\PokemonPOO.Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
