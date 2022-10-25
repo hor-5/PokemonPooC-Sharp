@@ -24,9 +24,10 @@ namespace PokemonPOO.Entidades
                         }
 
                     }
-             if (pokemonSeleccionado == null){
-                    Console.WriteLine("el entrenador no tiene a $nombrePokemon");
-                   }
+            if (pokemonSeleccionado == null){
+                Console.WriteLine($"{nombre} {apellido} no tiene a {nombrePokemon}");
+            }
+            
             return pokemonSeleccionado;
         }
 
@@ -64,6 +65,13 @@ namespace PokemonPOO.Entidades
             else
             {
                 Console.WriteLine($"el entrenador no tiene a {pokemon.nombre}");
+            }
+        }
+
+        public void verPokemones() {
+            Console.WriteLine($"\nLos pokemones de {nombre} son: ");
+            foreach (Pokemon pokemon in aPokemones) {
+                Console.WriteLine($"{pokemon.nombre.ToUpper()} - nivel:{pokemon.nivel}");
             }
         }
 

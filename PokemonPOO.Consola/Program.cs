@@ -3,18 +3,7 @@
 
 using PokemonPOO.Entidades;
 
-Console.WriteLine("                                  ,'\\\n" +
-        "    _.----.        ____         ,'  _\\   ___    ___     ____\n" +
-        "_,-'       `.     |    |  /`.   \\,-'    |   \\  /   |   |    \\  |`.\n" +
-        "\\      __    \\    '-.  | /   `.  ___    |    \\/    |   '-.   \\ |  |\n" +
-        " \\.    \\ \\   |  __  |  |/    ,','_  `.  |          | __  |    \\|  |\n" +
-        "   \\    \\/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |\n" +
-        "    \\     ,-'/  /   \\    ,'   | \\/ / ,`.|         /  /   \\  |     |\n" +
-        "     \\    \\ |   \\_/  |   `-.  \\    `'  /|  |    ||   \\_/  | |\\    |\n" +
-        "      \\    \\ \\      /       `-.`.___,-' |  |\\  /| \\      /  | |   |\n" +
-        "       \\    \\ `.__,'|  |`-._    `|      |__| \\/ |  `.__,'|  | |   |\n" +
-        "        \\_.-'       |__|    `-._ |              '-.|     '-.| |   |\n" +
-        "                                `'                            '-._|\n");
+
     //creamos los tipos de pokemon
     Tipo tipoPlanta = new Tipo(3,"planta");
     Tipo tipoAgua = new Tipo(2, "agua" );
@@ -22,10 +11,35 @@ Console.WriteLine("                                  ,'\\\n" +
     Tipo tipoVeneno= new Tipo(8, "veneno");
     Tipo tipoElectrico =  new Tipo(5, "electrico");
 
-//Console.WriteLine("el tipo planta es efectivo contra los tipos: ");
-//foreach (string nombreEfectividad in tipoPlanta.efectividad) {
-//        Console.WriteLine(nombreEfectividad);
-//    }
+    //método para pausar la ejecución
+    static void pausarEjecucion(int milisegundos) {
+        Thread.Sleep(milisegundos);
+    }
+    //método para seleccionar pokemones para la batalla
+    static List<Pokemon> seleccionarPokemonesParaBatalla(EntrenadorPokemon entrenador1, EntrenadorPokemon entrenador2) {
+        List<EntrenadorPokemon> iterableEntrenadores = new List<EntrenadorPokemon> { entrenador1, entrenador2 };
+        List<Pokemon> pokemonesABatallar = new List<Pokemon>();
+
+        foreach (EntrenadorPokemon entrenador in iterableEntrenadores) {
+            string pokemonIngresado;            
+            Console.WriteLine($"\nSelecciona el pokemon de {entrenador.nombre} para la batalla...");
+            entrenador.verPokemones();
+            pokemonIngresado = Console.ReadLine();
+            Pokemon resultado = entrenador.elegirPokemon(pokemonIngresado.ToLower());
+            while (resultado == null)
+            {
+                Console.WriteLine("\nIngrese un pokemon válido");
+                pokemonIngresado = Console.ReadLine();
+                resultado = entrenador.elegirPokemon(pokemonIngresado.ToLower());
+                
+            }
+            pokemonesABatallar.Add(resultado);
+            Console.WriteLine($"\n{entrenador.nombre} {entrenador.apellido} seleccionó a {pokemonIngresado.ToLower()}");            
+        }
+
+    return pokemonesABatallar;
+}
+    
 
 //----Creamos los cuatro pokemones----
 
@@ -125,7 +139,7 @@ EntrenadorPokemon ash = new EntrenadorPokemon(){
                                                 nombre="Ash",
                                                 apellido="Ketchup",
                                                 pokedex = pokedexAsh,
-                                                aPokemones=new List<Pokemon>()
+                                                aPokemones=new List<Pokemon>() {bulbasaur}
                                                 };
 
 EntrenadorPokemon sonia = new EntrenadorPokemon(){
@@ -138,36 +152,80 @@ EntrenadorPokemon sonia = new EntrenadorPokemon(){
                                                                                     }
                                                   };
 
+//empieza el programa
+Console.WriteLine("                                  ,'\\\n" +
+        "    _.----.        ____         ,'  _\\   ___    ___     ____\n" +
+        "_,-'       `.     |    |  /`.   \\,-'    |   \\  /   |   |    \\  |`.\n" +
+        "\\      __    \\    '-.  | /   `.  ___    |    \\/    |   '-.   \\ |  |\n" +
+        " \\.    \\ \\   |  __  |  |/    ,','_  `.  |          | __  |    \\|  |\n" +
+        "   \\    \\/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |\n" +
+        "    \\     ,-'/  /   \\    ,'   | \\/ / ,`.|         /  /   \\  |     |\n" +
+        "     \\    \\ |   \\_/  |   `-.  \\    `'  /|  |    ||   \\_/  | |\\    |\n" +
+        "      \\    \\ \\      /       `-.`.___,-' |  |\\  /| \\      /  | |   |\n" +
+        "       \\    \\ `.__,'|  |`-._    `|      |__| \\/ |  `.__,'|  | |   |\n" +
+        "        \\_.-'       |__|    `-._ |              '-.|     '-.| |   |\n" +
+        "                                `'                            '-._|\n");
+
+//Saludo bienvenida.
+Console.WriteLine("Bienvenido al mundo pokemon!");
+pausarEjecucion(1000);
+Console.WriteLine("Vamos a ver nuestros pokemones...\n");
+pausarEjecucion(2000);
 //usando metodos toString de cada pokemon
 Console.WriteLine(squirtle);
+pausarEjecucion(2000);
 Console.WriteLine(pikachu);
+pausarEjecucion(2000);
 Console.WriteLine(charmander);
+pausarEjecucion(2000);
 Console.WriteLine(bulbasaur);
+pausarEjecucion(2000);
 
 //El entrenador Ash atrapó a Pikachu
+Console.WriteLine("\nAsh atrapó a pikachu\n");
 ash.aPokemones.Add(pikachu);
+pausarEjecucion(2000);
 
 ////metodos de entrenamiento sobrecarga
 ash.entrenarPokemon("pikachu");
+pausarEjecucion(2000);
 ash.entrenarPokemon(pikachu, 3);
+pausarEjecucion(2000);
 sonia.entrenarPokemon(charmander);
+pausarEjecucion(2000);
 
 //sonia encuentra a ash con pikachu y consulta su pokedex
 Console.WriteLine("Sonia encuentra a ash con pikachu y consulta su pokedex");
 sonia.pokedex.registrarPokemon(pikachu);
+pausarEjecucion(5000);
 
 //ash encuentra a Sonia con Charmander y consulta su pokedex
 Console.WriteLine("Ash encuentra a Sonia con Charmander y consulta su pokedex");
 ash.pokedex.registrarPokemon(charmander);
+pausarEjecucion(5000);
 
 //Estableciendo campo de batalla
-CampoDeBatalla campoDeBatalla = new CampoDeBatalla() {
-                                                      idCampoDeBatalla=45,
-                                                      nombre="Liga naranja",
-                                                      localizacion = "Meseta Añil",
-                                                      pokemones = new List<Pokemon>() {
-                                                                                ash.elegirPokemon("pikachu"),
-                                                                                sonia.elegirPokemon(tipoAgua)
-                                                                                 }
-                                                        };
+CampoDeBatalla campoDeBatalla = new CampoDeBatalla()
+{
+    idCampoDeBatalla = 45,
+    nombre = "Liga naranja",
+    localizacion = "Meseta Añil",
+
+};
+
+//Campo de batalla bienvenida
+Console.WriteLine($"\nBienvenido al campo de batalla de {campoDeBatalla.nombre}");
+pausarEjecucion(2000);
+Console.WriteLine("\npresiona ENTER para continuar");
+Console.ReadLine();
+
+//SeleccionarPokemones para batalla
+List<Pokemon> pokemonesParaBatalla = seleccionarPokemonesParaBatalla(ash,sonia);
+
+campoDeBatalla.pokemones = pokemonesParaBatalla;
+
+//
+pausarEjecucion(2000);
+Console.WriteLine("\npresiona ENTER para comenzar la batalla");
+Console.ReadLine();
 campoDeBatalla.comenzarBatalla();

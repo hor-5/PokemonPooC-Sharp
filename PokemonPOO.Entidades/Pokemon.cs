@@ -139,7 +139,7 @@
         }
         public virtual void getEvoluciones()
         {
-            Console.WriteLine($"las evoluciones de´{nombre} son:");
+            Console.WriteLine($"las evoluciones de {nombre} son:");
             foreach(string evolucion in evoluciones)
                 {
                 Console.WriteLine(evolucion);
@@ -152,14 +152,14 @@
             {
                 if (this.tipoPrincipal.esEfectivoContra(pokemon.tipoPrincipal.nombreTipo))
                 {
-                    Console.WriteLine($"Los pokemon de tipo {this.tipoPrincipal.nombreTipo.ToUpper()} como {this.nombre} son efectivos contra los de tipo {pokemon.tipoPrincipal.nombreTipo.ToUpper()}");
+                    Console.WriteLine($"\nLos pokemon de tipo {this.tipoPrincipal.nombreTipo.ToUpper()} como {this.nombre} son efectivos contra los de tipo {pokemon.tipoPrincipal.nombreTipo.ToUpper()}");
                     Console.WriteLine($"{this.nombre.ToUpper()} le infringe el doble de daño a {pokemon.nombre.ToUpper()}");
-                    Console.WriteLine($"{this.nombre} tiene {this.salud} de salud y está atacando...");
+                    Console.WriteLine($"\n{this.nombre} tiene {this.salud} de salud y está atacando...");
                     pokemon.salud -= (this.capacidadAtaque * 2);
                 }
                 else
                 {
-                    Console.WriteLine($"{this.nombre} tiene ${this.salud} de salud y está atacando...");
+                    Console.WriteLine($"\n{this.nombre} tiene {this.salud} de salud y está atacando...");
                     pokemon.salud -= this.capacidadAtaque;
                }
 
@@ -168,7 +168,7 @@
             {
                 if (pokemon.salud <= 0)
                 {
-                    Console.WriteLine($"El pokemon {pokemon.nombre.ToUpper()} ha sido derrotado por {this.nombre.ToUpper()}");
+                    Console.WriteLine($"\nEl pokemon {pokemon.nombre.ToUpper()} ha sido derrotado por {this.nombre.ToUpper()}");
                 }
                 else if (this.salud <= 0)
                 {
@@ -182,7 +182,7 @@
         {
             if (this.salud > 0)
             {
-                Console.WriteLine($"{this.nombre} se está defendiendo y recuperando salud, ahora tiene {this.salud} de salud");
+                Console.WriteLine($"\n{this.nombre} se está defendiendo y recuperando salud, ahora tiene {this.salud} de salud");
                 this.salud += this.capacidadDefensa;
             }
             else
@@ -193,16 +193,16 @@
 
         public void entrenar()
         {
-            Console.WriteLine($"{this.nombre} nivel {this.nivel} está entrenando... ");
+            Console.WriteLine($"\n{this.nombre} nivel {this.nivel} está entrenando... ");
             this.nivel++;
-            Console.WriteLine($"{this.nombre} subió un nivel, ahora es nivel {this.nivel}.");
+            Console.WriteLine($"{this.nombre} subió un nivel, ahora es nivel {this.nivel}.\n");
         }
 
         public void entrenar(int intensidad)
         {
-            Console.WriteLine($"{this.nombre} nivel {this.nivel} está entrenando intensamente... ");
+            Console.WriteLine($"\n{this.nombre} nivel {this.nivel} está entrenando intensamente... ");
             this.nivel += intensidad;
-            Console.WriteLine($"{this.nombre} subió $intensidad niveles, ahora es nivel {this.nivel}.");
+            Console.WriteLine($"{this.nombre} subió {intensidad} niveles, ahora es nivel {this.nivel}.\n");
         }
 
         public abstract void evolucionar();
