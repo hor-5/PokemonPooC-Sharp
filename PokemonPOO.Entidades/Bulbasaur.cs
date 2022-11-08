@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class Bulbasaur : Pokemon
     {
@@ -13,12 +7,12 @@ namespace PokemonPOO.Entidades
         {
             if (this.nivel < 16)
             {
-                Console.WriteLine($"{this.nombre} todavia no está listo para evolucionar, necesita subir {16-this.nivel} niveles más");
+                Console.WriteLine($"{this.nombre} todavia no está listo para evolucionar, necesita subir {16 - this.nivel} niveles más");
             }
             else if (this.nivel >= 16)
             {
                 Console.WriteLine($"{this.nombre} está listo!");
-                 Console.WriteLine($"{this.nombre} está evolucionando a {this.evoluciones[0]}");
+                Console.WriteLine($"{this.nombre} está evolucionando a {this.evoluciones[0]}");
             }
             else if (this.nivel >= 32)
             {

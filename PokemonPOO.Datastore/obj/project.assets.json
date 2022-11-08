@@ -12,6 +12,18 @@
           "bin/placeholder/PokemonPOO.Entidades.dll": {}
         }
       }
+    },
+    "net6.0/win-x86": {
+      "PokemonPOO.Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PokemonPOO.Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PokemonPOO.Entidades.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -90,6 +102,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x86": {
+        "#import": []
       }
     }
   }

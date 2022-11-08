@@ -5,7 +5,7 @@ using PokemonPOO.Servicios;
 namespace PokemonPOO.API.Controllers
 {
     [ApiController]
-    [Route("tipos-pokemon")]
+    [Route("api/tipos-pokemon")]
     public class TipoPokemonController : ControllerBase
     {
 
@@ -13,9 +13,10 @@ namespace PokemonPOO.API.Controllers
 
         [HttpGet]
         [Route("todos")]
-        public List<Tipo> obtenerTodos(){
+        public List<Tipo> obtenerTodos()
+        {
             return dataServices.getTipos();
         }
-        
+
     }
 }

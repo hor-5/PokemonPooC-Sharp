@@ -1,58 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class EntrenadorPokemon
     {
         public int idEntrenador { get; set; }
-        public string nombre { get; set; } 
-        public string apellido { get; set; }   
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string imgUrl { get; set; }
         public Pokedex pokedex { get; set; }
         public List<Pokemon> aPokemones { get; set; }
 
 
-        private Pokemon buscarPokemon(string nombrePokemon){
+        private Pokemon buscarPokemon(string nombrePokemon)
+        {
             Pokemon pokemonSeleccionado = null;
-            foreach (Pokemon pokemon in aPokemones){
+            foreach (Pokemon pokemon in aPokemones)
+            {
 
-                    if (pokemon.nombre == nombrePokemon){
-                            pokemonSeleccionado = pokemon;
-                        }
+                if (pokemon.nombre == nombrePokemon)
+                {
+                    pokemonSeleccionado = pokemon;
+                }
 
-                    }
-            if (pokemonSeleccionado == null){
+            }
+            if (pokemonSeleccionado == null)
+            {
                 Console.WriteLine($"{nombre} {apellido} no tiene a {nombrePokemon}");
             }
-            
+
             return pokemonSeleccionado;
         }
 
-        public Pokemon elegirPokemon(string nombrePokemon){
-                return buscarPokemon(nombrePokemon);
-            }
+        public Pokemon elegirPokemon(string nombrePokemon)
+        {
+            return buscarPokemon(nombrePokemon);
+        }
 
-        public Pokemon elegirPokemon(Tipo tipo){
-                Pokemon pokemonSeleccionado = null;
-                foreach (Pokemon pokemon in aPokemones){
-                        if (tipo.nombreTipo == pokemon.tipoPrincipal.nombreTipo){
-                            pokemonSeleccionado = pokemon;
-                            break;
-                        }
-                    }
-                return pokemonSeleccionado;
+        public Pokemon elegirPokemon(Tipo tipo)
+        {
+            Pokemon pokemonSeleccionado = null;
+            foreach (Pokemon pokemon in aPokemones)
+            {
+                if (tipo.nombreTipo == pokemon.tipoPrincipal.nombreTipo)
+                {
+                    pokemonSeleccionado = pokemon;
+                    break;
+                }
             }
+            return pokemonSeleccionado;
+        }
 
         public void entrenarPokemon(string nombrePokemon)
         {
             Pokemon pokemonSeleccionado = buscarPokemon(nombrePokemon);
             if (pokemonSeleccionado != null)
-                {
-                    pokemonSeleccionado.entrenar();
-                }
+            {
+                pokemonSeleccionado.entrenar();
+            }
         }
 
         public void entrenarPokemon(Pokemon pokemon, int intensidad = 1)
@@ -68,9 +71,11 @@ namespace PokemonPOO.Entidades
             }
         }
 
-        public void verPokemones() {
+        public void verPokemones()
+        {
             Console.WriteLine($"\nLos pokemones de {nombre} son: ");
-            foreach (Pokemon pokemon in aPokemones) {
+            foreach (Pokemon pokemon in aPokemones)
+            {
                 Console.WriteLine($"{pokemon.nombre.ToUpper()} - nivel:{pokemon.nivel}");
             }
         }

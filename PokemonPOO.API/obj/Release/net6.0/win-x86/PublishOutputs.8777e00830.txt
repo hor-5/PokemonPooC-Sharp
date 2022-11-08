@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.API.exe
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.Development.json
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.json
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.API.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.API.deps.json
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.API.runtimeconfig.json
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.API.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Datastore.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Entidades.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Servicios.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Entidades.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Servicios.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.API\obj\Release\net6.0\win-x86\PubTmp\Out\PokemonPOO.Datastore.pdb

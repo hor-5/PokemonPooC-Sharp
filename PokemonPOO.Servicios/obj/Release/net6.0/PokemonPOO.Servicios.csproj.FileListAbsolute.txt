@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Servicios.deps.json
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Servicios.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\ref\PokemonPOO.Servicios.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Servicios.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Datastore.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Entidades.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Datastore.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\bin\Release\net6.0\PokemonPOO.Entidades.pdb
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.csproj.CopyComplete
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\ref\PokemonPOO.Servicios.dll
+C:\Users\Usuario\source\repos\PokemonPOO\PokemonPOO.Servicios\obj\Release\net6.0\PokemonPOO.Servicios.pdb

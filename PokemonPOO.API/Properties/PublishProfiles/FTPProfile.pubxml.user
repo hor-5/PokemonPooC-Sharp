@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADyoFjf9mHUaySIcwCCgDTwAAAAACAAAAAAAQZgAAAAEAACAAAAD/feaQfiR2AP0xUEJwf3TCL5AzZGs0lDBO6kqGkiGZmQAAAAAOgAAAAAIAACAAAAARmD0MBUXfVq5AOmn6rhmUPDmOy08DCFtoU25vKmH41iAAAACd7+pz5RkGVWrgADgWbSxomUU2hEz+cBHXANg+8+emTUAAAACE1rwpkFVtGjmY9rsaN9FDZla9Funjuw1h6LxDqZnF/J6G9EMZBde67sps8jb2fYUWnVE+tgoyDFwGipGozkgU</EncryptedPassword>
+    <_PublishTargetUrl>C:\Users\Usuario\source\repos\Publish\pokemonEnCapas</_PublishTargetUrl>
+    <History>True|2022-11-08T17:49:56.6057260Z;True|2022-11-08T14:24:50.1548360-03:00;True|2022-11-06T18:41:33.5938469-03:00;True|2022-11-06T18:31:58.4589047-03:00;False|2022-11-06T17:56:28.5836505-03:00;False|2022-11-06T17:09:10.6490386-03:00;</History>
+  </PropertyGroup>
+</Project>

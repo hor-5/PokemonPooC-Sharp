@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class Pokedex
     {
@@ -21,7 +15,7 @@ namespace PokemonPOO.Entidades
 
         public void registrarPokemon(Pokemon pokemon)
         {
-           Console.WriteLine($"\nBuscando a {pokemon.nombre.ToUpper()} en la pokedex");
+            Console.WriteLine($"\nBuscando a {pokemon.nombre.ToUpper()} en la pokedex");
             mostrarInfoPokemon(pokemon);
             pokemonesRegistrados.Add(pokemon);
             Console.WriteLine($"{pokemon.nombre} registrado!");

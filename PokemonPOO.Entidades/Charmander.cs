@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class Charmander : Pokemon
     {
@@ -29,7 +23,7 @@ namespace PokemonPOO.Entidades
 
         public override string ToString()
         {
-            return $"Soy un pokemon {nombre}, mi id es #{idPokemon} soy de tipo {tipoPrincipal.nombreTipo}, y mi llama está {nivelDeLlama}. Me encantaria llegar a evolucionar a {evoluciones[1]}"; 
+            return $"Soy un pokemon {nombre}, mi id es #{idPokemon} soy de tipo {tipoPrincipal.nombreTipo}, y mi llama está {nivelDeLlama}. Me encantaria llegar a evolucionar a {evoluciones[1]}";
         }
 
     }

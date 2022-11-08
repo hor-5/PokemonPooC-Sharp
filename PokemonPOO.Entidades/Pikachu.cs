@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class Pikachu : Pokemon
     {
@@ -18,7 +12,7 @@ namespace PokemonPOO.Entidades
         {
             if (this.nivel < 30)
             {
-                Console.WriteLine($"{this.nombre} todavia no está listo para evolucionar, necesita subir {30-this.nivel} niveles más");
+                Console.WriteLine($"{this.nombre} todavia no está listo para evolucionar, necesita subir {30 - this.nivel} niveles más");
             }
             else if (this.nivel >= 30)
             {

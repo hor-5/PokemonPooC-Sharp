@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokemonPOO.Entidades
+﻿namespace PokemonPOO.Entidades
 {
     public class Tipo
     {
@@ -16,13 +10,15 @@ namespace PokemonPOO.Entidades
         //establecemos las debilidad contra X tipos de pokemon según el tipo de pokemon llamando al metodo set
         public List<string> debilidad;
 
-        public Tipo(int id, string nombre) {
+        public Tipo(int id, string nombre)
+        {
             this.idTipo = id;
             this.nombreTipo = nombre;
             this.efectividad = setEfectividad();
             this.debilidad = setDebilidad();
         }
-        public List<string> setEfectividad() {
+        public List<string> setEfectividad()
+        {
             List<string> listaEfectividad = null;
 
             switch (nombreTipo)
@@ -60,7 +56,8 @@ namespace PokemonPOO.Entidades
             return listaEfectividad;
         }
 
-        public List<string> setDebilidad() {
+        public List<string> setDebilidad()
+        {
             List<string> listaDebilidad = null;
 
             switch (nombreTipo)
@@ -98,7 +95,8 @@ namespace PokemonPOO.Entidades
             return listaDebilidad;
         }
 
-        public bool esEfectivoContra(string nombreTipo){
+        public bool esEfectivoContra(string nombreTipo)
+        {
             return efectividad.Contains(nombreTipo);
         }
 
