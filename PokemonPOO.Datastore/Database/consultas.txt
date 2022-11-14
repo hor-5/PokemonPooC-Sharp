@@ -1,0 +1,53 @@
+﻿-----------------
+TIPOS
+SELECT T.idTipo,T.nombreTipo FROM Tipos T 
+WHERE T.nombreTipo ='agua' OR T.nombreTipo = 'fuego' OR T.nombreTipo='electrico'
+OR T.nombreTipo = 'planta' OR T.nombreTipo ='veneno'
+
+//debilidads y efectividades
+
+--SELECT T.nombreTipo from Tipos T INNER JOIN AuxDebilidades D on T.idTipo = D.idDebilidad WHERE D.fk_idTipoDebilidades = 5 -- DEBILIDADES DEL TIPO AGUA
+
+--SELECT T.nombreTipo from Tipos T INNER JOIN AuxDebilidades D on T.idTipo = D.idDebilidad WHERE D.fk_idTipoDebilidades = 6 -- DEBILIDADES DEL TIPO FUEGO
+
+--SELECT T.nombreTipo from Tipos T INNER JOIN AuxDebilidades D on T.idTipo = D.idDebilidad WHERE D.fk_idTipoDebilidades = 9 -- DEBILIDADES DEL TIPO [IDTIPO]
+
+--SELECT T.nombreTipo from Tipos T INNER JOIN AuxEfectividades E on T.idTipo = E.idEfectividad WHERE E.fk_idTipoEfectividad = 5 --EFECTIVIDADES DEL TIPO AGUA [IDTIPO]
+
+--SELECT T.nombreTipo from Tipos T INNER JOIN AuxEfectividades E on T.idTipo = E.idEfectividad WHERE E.fk_idTipoEfectividad = 7
+
+
+
+
+
+--------------------------
+ENTRENADOR
+
+
+//traer pokemones
+SELECT P.nombre, E.nombre FROM Pokemones P INNER JOIN Entrenadores E ON P.fk_idEntrenador = 1 --Pokemones de un entrenador
+
+----------
+POKEMONES
+
+//traer datos pokemon
+
+//bulbasaur
+SELECT P.idPokemon, P.nombre,T.idTipo as idTipoPrincipal, T.nombreTipo as tipoPrincipal, 
+TI.idTipo as idTipoSecundario,TI.nombreTipo as tipoSecundario,P.salud,P.capacidadAtaque,
+P.capacidadDefensa, P.peso,P.altura,P.nivel,P.descripcion, P.imgUrl, P.tamanioSemilla
+FROM Pokemones P
+INNER JOIN Tipos T ON P.fk_idTipoPrincipal = T.idTipo 
+INNER JOIN Tipos TI ON P.fk_idTipoSecundario = TI.idTipo
+WHERE P.nombre = 'bulbasaur'
+
+//otros
+SELECT P.idPokemon, P.nombre,T.idTipo as idTipoPrincipal, T.nombreTipo as tipoPrincipal, 
+P.salud,P.capacidadAtaque,P.capacidadDefensa, P.peso,P.altura,P.nivel,P.descripcion, 
+P.imgUrl, P.nivelDeLlama
+FROM Pokemones P
+INNER JOIN Tipos T ON P.fk_idTipoPrincipal = T.idTipo 
+WHERE P.nombre = 'charmander'
+
+//EVOLUCIONES
+SELECT DISTINCT E.nombreEvolucion FROM Evoluciones E INNER JOIN Pokemones P ON E.fk_idPokemon = 8 //evoluciones de charmander

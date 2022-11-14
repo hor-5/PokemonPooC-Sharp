@@ -7,8 +7,7 @@
 
         public void mostrarInfoPokemon(Pokemon pokemon)
         {
-            pokemon.setImagenASCII(pokemon);
-            Console.WriteLine(pokemon.getImagenASCII());
+
             Console.WriteLine($"información sobre {pokemon.nombre} :");
             Console.WriteLine($"\n {pokemon.descripcion}\n");
         }

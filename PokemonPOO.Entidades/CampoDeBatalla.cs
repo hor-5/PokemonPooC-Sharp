@@ -17,7 +17,7 @@
 
         public ResultadoBatalla comenzarBatalla()
         {
-            ResultadoBatalla resultadoBatalla = null;
+            ResultadoBatalla resultadoBatalla = new ResultadoBatalla();
 
             if (pokemones.Count > 1)
             {
