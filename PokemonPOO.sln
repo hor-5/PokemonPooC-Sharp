@@ -19,6 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PokemonPOO.Servicios", "Pok
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonPOO.Servicios", "PokemonPOO.Servicios\PokemonPOO.Servicios.csproj", "{E841CD89-B792-4082-8B7F-1E903FC2CE64}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PokemonPOO.Frontend", "PokemonPOO.Frontend", "{78683F8B-75B6-47C5-A311-7DC8CBDE4DCB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon.html = ..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon.html
+		..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon_logo.png = ..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon_logo.png
+		..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon_requests.js = ..\..\..\Desktop\ISTIC\2do año\2do cuatrimestre\Diseño de sistemas\exposicion\pokemon_requests.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
