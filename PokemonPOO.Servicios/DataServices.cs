@@ -15,6 +15,9 @@ namespace PokemonPOO.Servicios
         {
             return dataStorage.GetPokemones();
         }
+        public int subirNivelPokemon(int idPokemon, int nivel) {
+            return dataStorage.SubirNivelPokemon(idPokemon, nivel);
+        }
 
         public Pokemon getPokemonById(int id)
         {

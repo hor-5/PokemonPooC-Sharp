@@ -66,14 +66,17 @@ namespace PokemonPOO.API.Controllers
                     result = pokemon;
                 }
             }
-            result.entrenar();
+
 
             if (result != null)
             {
+                result.entrenar();
+                dataServices.subirNivelPokemon(result.idPokemon, result.nivel);
+
                 return new
                 {
                     pokemon = result,
-                    mensaje = $"{result.nombre} completo su entrenamiento",
+                    mensaje = $"{result.nombre} completó su entrenamiento",
                     nivel = result.nivel
                 };
             }

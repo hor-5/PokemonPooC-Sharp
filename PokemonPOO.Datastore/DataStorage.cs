@@ -267,8 +267,16 @@ namespace PokemonPOO.Datastore
             //-----------------//
             return pokemones;
         }
-        
-        
+
+        public int SubirNivelPokemon(int idPokemon, int nivel)
+        {
+            string sql = "UPDATE Pokemones SET nivel = @nivel WHERE idPokemon = @idPokemon";
+            Object paramList = new { idPokemon = idPokemon, nivel = nivel };
+            int affectedRows = dbOperation.OperationExecute(sql, paramList);
+
+            return affectedRows;
+        }
+
         //Pokedexs
         private List<Pokedex> GetPokedexs()
         {
