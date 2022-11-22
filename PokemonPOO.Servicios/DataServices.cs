@@ -74,5 +74,9 @@ namespace PokemonPOO.Servicios
             ResultadoBatalla resultadoBatalla = null;
             return campoDeBatalla.comenzarBatalla();
         }
+
+        public int setPokemonesBatalla(int idPokemon1, int idPokemon2) {
+            return dataStorage.SetPokemonesBatalla(idPokemon1, idPokemon2);
+        }
     }
 }

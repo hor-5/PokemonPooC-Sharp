@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="icon" href="pokemon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/11973741e4.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"></script>
+    <script src="pokemon_requests.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+        background: #C9D6FF;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .pantalla-pokedex{
+        border-radius: 15px;
+        position: absolute;
+        top:335px;
+        left: 345px;
+        height: 170px;
+        width: 220px;        
+    }
+    .boton-pokedex{
+        position: absolute;
+        top:575px;
+        left:290px;
+        height: 45px;
+        width: 45px;
+        z-index: 99;
+        opacity: 20%;
+    }
+    .boton-pokedex:hover{
+        opacity: 50%;
+        filter: (5px 5px 10px blue);
+        cursor: pointer;
+    }
+    .click{
+        position: absolute;
+        top:450px;
+        left:165px;
+    }
+    
+    .texto-pantalla{
+        position: absolute;
+        top:320px;
+        right:360px;
+        font-family: 'Press Start 2P', cursive!important;
+        color:#FFFF;        
+    }
+    .titulo{
+        font-family: 'Press Start 2P', cursive!important;
+    }
+
+
+    @media(max-width:550px) {
+
+
+    }
+</style>
+
+<body >
+
+    <div class="row text-start p-1">
+        <div class="col-3">
+            <button class="btn btn-light btn-lg rounded-circle" onclick="volver()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="text-center">
+               <h1 class="titulo">POKEDEX</h1>
+            </div>
+        </header>
+        <div class="row text-center">
+            <img height="700px" src="https://i.ibb.co/1nnqdzZ/pokedex-img-removebg-preview.png" alt="pokedex">
+        </div>
+    </div>
+    <h7 class="texto-pantalla" id="textoPantalla">...</h7>
+    <img class="pantalla-pokedex" id="pantallaPokedex" src="https://i.ibb.co/MPspW2R/pantalla-pokedex.png" alt="pantalla">
+    <img class="boton-pokedex" id="botonPokedex" onclick="cambiarPokemonEnPokedex()" src="https://i.ibb.co/FnzXGym/boton-pokedex.png" alt="boton">
+
+        
+    <lottie-player class="click" src="https://assets4.lottiefiles.com/packages/lf20_vykqp3ao.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

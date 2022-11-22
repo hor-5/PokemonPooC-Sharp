@@ -29,7 +29,7 @@
     }
 </style>
 
-<body>
+<body onload="traerDatosBatalla()">
     <div class="row text-start p-1">
         <div class="col-3">
             <button class="btn btn-light btn-lg rounded-circle" onclick="volver()">
@@ -38,53 +38,69 @@
         </div>
     </div>
     <div class="container">
-        <h1 class="text-white">Batalla Pokemon</h1>
+        <div class="text-white" id="infoCampoBatalla">
+            <div class="text-center">
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
         <div class="row contenido">
             <div class="col-3 text-center p-2">
-                <img style="border-radius: 20px;" height="250px" width="250px" class="img rounded-5"
-                    src="https://nintendosoup.com/wp-content/uploads/2019/04/Mewtwo-Strikes-Back-Evolution-Ash.jpg"
+                <img id="imgEntrenador1" style="border-radius: 20px;" height="250px" width="250px" class="img rounded-5"
+                    src="https://miro.medium.com/max/1360/1*oggxLUdueZBH5S8XN9kccg.gif"
                     alt="ash">
 
-                <h4>Ash Ketchum</h4>
+                <h4 id="nombreEntrenador1">
+                    <div class="text-center m-1">
+                        <div class="spinner-border text-info" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </h4>
                 <h6>Elegir pokemon</h6>
-                <select class="form-select mb-2" aria-label="Default select example">
+                <select id="sltPokemonesEntrenador1" onChange="setImagenPokemon1(this.options[this.selectedIndex].value)" class="form-select mb-2" aria-label="Default select example">
                     <option selected>Seleccionar pokemon</option>
-                    <option value="1">pikachu</option>
-                    <option value="2">bulbasaur</option>                    
+                    
                 </select>
             </div>
 
             <div class="col-6">
                 <div class="row">
                     <div class="col-6 d-flex justify-content-start">
-                        <img class="rounded-circle" height="100px" width="100px" src="http://pm1.narvii.com/7694/35585e9b4a403951d9e6f35ac3ac0ffad1797617r1-1200-675v2_uhq.jpg" alt="pokemon ash">
+                        <img id="imgPokemon1" class="rounded-circle" height="100px" width="100px" src="http://pm1.narvii.com/7694/35585e9b4a403951d9e6f35ac3ac0ffad1797617r1-1200-675v2_uhq.jpg" alt="pokemon ash">
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <img class="rounded-circle" height="100px" width="100px" src="http://pm1.narvii.com/7694/35585e9b4a403951d9e6f35ac3ac0ffad1797617r1-1200-675v2_uhq.jpg" alt="pokemon sonia">
+                        <img id="imgPokemon2" class="rounded-circle" height="100px" width="100px" src="http://pm1.narvii.com/7694/35585e9b4a403951d9e6f35ac3ac0ffad1797617r1-1200-675v2_uhq.jpg" alt="pokemon sonia">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <button class="btn btn-primary rounded-pill">
+                        <button class="btn btn-primary rounded-pill" onclick="batallar(sltPokemonesEntrenador1.options[sltPokemonesEntrenador1.options.selectedIndex].value, sltPokemonesEntrenador2.options[sltPokemonesEntrenador2.options.selectedIndex].value)">
                             Batallar <i class="fa-solid fa-play"></i>
                         </button>
                     </div>
                 </div>
-                <div class="row text-center mt-5">
-                    <h3>GANADOR : ...</h3>
+                <div class="row text-center mt-5" id="resultadosBatalla">
+                    
                 </div>
             </div>
 
             <div class="col-3 text-center p-2">
-                <img style="border-radius: 20px;" height="250px" width="250px" class="img rounded-5"
-                    src="https://http2.mlstatic.com/D_NQ_NP_745758-MLM29706906187_032019-O.jpg" alt="sonia">
+                <img id="imgEntrenador2" style="border-radius: 20px;" height="250px" width="250px" class="img rounded-5"
+                    src="https://miro.medium.com/max/1360/1*oggxLUdueZBH5S8XN9kccg.gif" alt="sonia">
 
-                <h4>Sonia Saysutke</h4>
+                <h4 id="nombreEntrenador2"> 
+                    <div class="text-center m-1">
+                        <div class="spinner-border text-info" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </h4>
                 <h6>Elegir pokemon</h6>
-                <select class="form-select mb-2" aria-label="Default select example">
+                <select id="sltPokemonesEntrenador2" onChange="setImagenPokemon2(this.options[this.selectedIndex].value)" class="form-select mb-2" aria-label="Default select example">
                     <option selected>Seleccionar pokemon</option>
-                    <option value="1">squirtle</option>
-                    <option value="2">charmander</option>                    
+                   
                 </select>
             </div>
         </div>

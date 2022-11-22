@@ -33,6 +33,16 @@ namespace PokemonPOO.API.Controllers
             return dataServices.getResultadoDeBatalla(campoDeBatalla);
         }
 
+        [HttpGet]
+        [Route("{idCampoBatalla}/pokemones/set/{idPokemon1}/{idPokemon2}")]
+        public List<Pokemon> setPokemones(int idCampoBatalla,int idPokemon1, int idPokemon2)
+        {
+            CampoDeBatalla campoDeBatalla = dataServices.getCampoDeBatallaPorId(idCampoBatalla);
+            dataServices.setPokemonesBatalla(idPokemon1, idPokemon2);
+            campoDeBatalla = dataServices.getCampoDeBatallaPorId(idCampoBatalla);
+            return campoDeBatalla.pokemones;
+        }
+
         //seleccionar pokemones para la batalla ?
         //{idCampoBatalla}/pokemones/todos ?¿
         //{idCampoBatalla}/pokemones/agregar ?¿

@@ -374,5 +374,26 @@ namespace PokemonPOO.Datastore
 
             return camposDeBatalla;
         }
+
+        private int updateCampoBatallaPokemon(int idPokemon) {
+            //limpiar pokemones del campo de batalla
+            string sql = $"UPDATE  Pokemones SET  fk_idCampoBatalla=@idCampoDeBatalla WHERE idPokemon = {idPokemon}";
+            Object paramList = new { idCampoDeBatalla = 1 };
+            int affectedRows = dbOperation.OperationExecute(sql, paramList);
+
+            return affectedRows;
+        }
+        public int SetPokemonesBatalla(int idPokemon1, int idPokemon2) {
+            //limpiar pokemones del campo de batalla
+            string sql = "UPDATE  Pokemones SET  fk_idCampoBatalla=CAST(NULL As nvarchar(100)) WHERE fk_idCampoBatalla = @idCampoDeBatalla";
+            Object paramList = new { idCampoDeBatalla = 1};
+            int affectedRows = dbOperation.OperationExecute(sql, paramList);
+
+            //setear pokemones seleccionados
+            updateCampoBatallaPokemon(idPokemon1);
+            updateCampoBatallaPokemon(idPokemon2);
+
+            return affectedRows;
+        }
     }
 }
